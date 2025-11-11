@@ -12,8 +12,8 @@
                 <p>Partner with industry-leading consultants who drive sustainable growth through data-driven insights and
                     proven methodologies.</p>
                 <div class="hero-buttons">
-                    <button class="btn btn-primary">Start Your Transformation →</button>
-                    <button class="btn btn-outline">Our Approach</button>
+                    <button @click="goContact()" class="btn btn-primary">Start Your Transformation →</button>
+                    <button @click="goAbout()" class="btn btn-outline">Our Approach</button>
                 </div>
             </div>
         </div>
@@ -228,9 +228,12 @@ export default {
         }
     },
     methods: {
-        toggleMobileMenu() {
-            this.mobileMenuOpen = !this.mobileMenuOpen;
+        goAbout() {
+            this.$router.push({ path: `/about`})
         },
+        goContact() {
+            this.$router.push({ path: `/contact`})
+        }
     }
 }
 </script>

@@ -2,7 +2,7 @@
     <!-- Navigation -->
     <NavBar />
     <!-- Hero Section -->
-    <section class="hero hero-img" id="home">
+    <section class="hero hero-img">
         <div class="">
             <div class="hero-content">
                 <h1>
@@ -104,7 +104,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 /* Hero Section */
 .hero {
     min-height: 70vh;
@@ -291,11 +291,11 @@ export default {
 
 @media (max-width: 480px) {
     .mvv-grid {
-        grid-template-columns: 1fr;
-    }
+    grid-template-columns: 1fr;
+}
 
-    .values-grid {
-        grid-template-columns: 1fr;
-    }
+.values-grid {
+    grid-template-columns: 1fr;
+}
 }
 </style>

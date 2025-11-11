@@ -110,7 +110,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Apex Consulting Partners. All rights reserved.</p>
+        <p>&copy; 2025 Proven Performance Ltd. All rights reserved.</p>
     </footer>
 
 </template>
@@ -143,7 +143,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 /* Hero Section */
 .hero {
     min-height: 70vh;

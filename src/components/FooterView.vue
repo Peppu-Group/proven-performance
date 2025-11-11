@@ -6,8 +6,7 @@
             <p>Let's discuss how our proven methodologies can drive measurable results for your organization. Schedule a
                 complimentary consultation today.</p>
             <div class="cta-buttons">
-                <button class="btn btn-primary">Schedule Consultation →</button>
-                <button class="btn btn-outline">✉ Contact Us</button>
+                <button @click="goContact()" class="btn btn-primary">Schedule Consultation →</button>
             </div>
         </div>
     </section>
@@ -29,13 +28,13 @@
                 <div class="col-12">
                     <h5 class="footer-heading">Quick Links</h5>
                     <div class="row">
-                        <div class="col-md-3 col-6">
+                        <div class="col-md-4 col-6">
                             <a href="/about">About Us</a>
                         </div>
-                        <div class="col-md-3 col-6">
+                        <div class="col-md-4 col-6">
                             <a href="/services">Services</a>
                         </div>
-                        <div class="col-md-3 col-6">
+                        <div class="col-md-4 col-6">
                             <a href="/contact">Contact</a>
                         </div>
                     </div>
@@ -71,6 +70,11 @@
 <script>
 export default {
     name: 'FooterView',
+    methods: {
+        goContact() {
+            this.$router.push({ path: `/contact`})
+        }
+    }
 }
 </script>
 <style>

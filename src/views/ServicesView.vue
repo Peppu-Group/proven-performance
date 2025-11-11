@@ -187,7 +187,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 /* Hero Section */
 .hero {
     min-height: 60vh;
