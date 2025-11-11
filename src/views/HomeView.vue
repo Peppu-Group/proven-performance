@@ -174,27 +174,27 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="client-logo-wrapper">
-                            <img src="../assets/client1.png" class="d-block" alt="Client 1">
+                            <img src="../assets/client.png" class="d-block" alt="Client 1">
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="client-logo-wrapper">
-                            <img src="../assets/client2.png" class="d-block" alt="Client 2">
+                            <img src="../assets/client.png" class="d-block" alt="Client 2">
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="client-logo-wrapper">
-                            <img src="../assets/client3.png" class="d-block" alt="Client 3">
+                            <img src="../assets/client.png" class="d-block" alt="Client 3">
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="client-logo-wrapper">
-                            <img src="../assets/client4.png" class="d-block" alt="Client 4">
+                            <img src="../assets/client.png" class="d-block" alt="Client 4">
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="client-logo-wrapper">
-                            <img src="../assets/client5.png" class="d-block" alt="Client 5">
+                            <img src="../assets/client.png" class="d-block" alt="Client 5">
                         </div>
                     </div>
                 </div>
