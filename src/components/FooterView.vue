@@ -36,9 +36,6 @@
                             <a href="/services">Services</a>
                         </div>
                         <div class="col-md-3 col-6">
-                            <a href="/results">Results</a>
-                        </div>
-                        <div class="col-md-3 col-6">
                             <a href="/contact">Contact</a>
                         </div>
                     </div>

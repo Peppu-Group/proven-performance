@@ -291,11 +291,11 @@ export default {
 
 @media (max-width: 480px) {
     .mvv-grid {
-    grid-template-columns: 1fr;
-}
+        grid-template-columns: 1fr;
+    }
 
-.values-grid {
-    grid-template-columns: 1fr;
-}
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
 }
 </style>
