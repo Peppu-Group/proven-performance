@@ -1,223 +1,313 @@
 <template>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="navbar-brand">
-            <span>Peppu E-invite</span>
-        </div>
-
-        <div class="navbar-menu">
-            <a href="#" class="nav-link active">Dashboard</a>
-            <a href="#" class="nav-link">Pricing</a>
-            <a href="#" class="nav-link">Features</a>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../assets/logo.png" alt="Apex Consulting">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/results">Results</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary" href="/contact">Get Started</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <!-- Mobile Navigation -->
-    <div class="mobile-nav" :class="{ active: mobileMenuOpen }">
-        <a href="#" class="mobile-nav-link">Dashboard</a>
-    </div>
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1 class="logo">peppu e-invite</h1>
-            <p class="tagline">Smart Guest List Management Made Simple</p>
-            <p class="subtitle">From RSVP to check-in, manage every detail of your event with ease. Track responses,
-                organize seating, handle plus ones, and communicate seamlessly.</p>
-            <div class="cta-buttons">
-                <a href="/scanner.html" class="btn btn-primary">Start Managing Invites</a>
-                <a href="#features" class="btn btn-secondary">Learn More</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="stats-section">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-number">2,500+</div>
-                    <div class="stat-label">Guests Managed</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">3+</div>
-                    <div class="stat-label">Successful Events</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">100%</div>
-                    <div class="stat-label">Happy Planners</div>
+    <section class="hero hero-img" id="home">
+        <div class="">
+            <div class="hero-content">
+                <h1>
+                    Transform Strategy Into
+                    <span class="highlight">Measurable Results</span>
+                </h1>
+                <p>Partner with industry-leading consultants who drive sustainable growth through data-driven insights and
+                    proven methodologies.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Start Your Transformation →</button>
+                    <button class="btn btn-outline">Our Approach</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Showcase Section -->
-    <section class="showcase-section">
+    <!-- Services Section -->
+    <section class="services" id="services">
         <div class="container">
-            <img src="../assets/peppu-feature1.png" alt="Peppu E-Invite Platform Interface" class="showcase-image">
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features" id="features">
-        <div class="container">
-            <h2 class="section-title">Everything You Need to Manage Your Event</h2>
-            <p class="section-subtitle">Powerful features designed to make event planning effortless and stress-free</p>
-
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">✉️</div>
-                    <h3>RSVP Management</h3>
-                    <p>Collect and track guest responses effortlessly. Know exactly who's coming and who's not in real-time.
+            <div class="section-header">
+                <h2>Our Expertise</h2>
+                <p>Comprehensive solutions tailored to your unique challenges and opportunities</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Management Consulting</h3>
+                    <p>Develop winning strategies to attract, retain, and develop talent. Optimize business processes and
+                        improve efficiency
                     </p>
                 </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">✅</div>
-                    <h3>Quick Check-In</h3>
-                    <p>Speed up event entry with our instant check-in system. Scan invites and verify guests in seconds.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">👥</div>
-                    <h3>Plus One Tracking</h3>
-                    <p>Manage guest companions with ease. Track who's bringing a plus one and update counts automatically.
+                <div class="service-card">
+                    <h3>ICT Consulting</h3>
+                    <p>Align IT with business objectives. Build and implement custom software solutions and robust
+                        IT infrastructure.
                     </p>
                 </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">🪑</div>
-                    <h3>Seating Arrangement</h3>
-                    <p>Organize your event layout perfectly. Create seating charts and assign tables with drag-and-drop
-                        simplicity.</p>
+                <div class="service-card">
+                    <h3>Training</h3>
+                    <p>Create customized training solutions for teams. Equip project teams with the skills to plan,
+                        execute, and deliver projects successfully using industry best practices</p>
                 </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">📊</div>
-                    <h3>Real-Time Analytics</h3>
-                    <p>Get instant insights on attendance, response rates, and guest preferences to make informed decisions.
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">🔔</div>
-                    <h3>Smart Notifications</h3>
-                    <p>Send automated reminders and updates to keep your guests informed and engaged throughout.</p>
+                <div class="service-card">
+                    <h3>Performance Optimization</h3>
+                    <p>Maximize operational efficiency and profitability through data-driven process improvement.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Communication Section -->
-    <section class="communication">
+    <!-- Why Choose Us Section -->
+    <section class="why-us">
         <div class="container">
-            <h2 class="section-title">Multi-Channel Communication</h2>
-            <p class="section-subtitle">Reach your guests wherever they are. Track responses and communicate effortlessly
-                through their preferred channels.</p>
-
-            <div class="comm-grid">
-                <div class="comm-card">
-                    <div class="comm-icon">💬</div>
-                    <h3>WhatsApp</h3>
-                    <p>Send instant invites and reminders. Track message delivery and responses in real-time with the
-                        world's most popular messaging platform.</p>
+            <div class="why-us-content">
+                <div class="why-us-text">
+                    <h2>
+                        Why Leading Organizations
+                        <span class="highlight">Choose Us</span>
+                    </h2>
+                    <p>We combine deep industry knowledge with innovative thinking to deliver transformative results that
+                        stand the test of time.</p>
+                    <ul class="benefits">
+                        <li>Proven track record across successful engagements</li>
+                        <li>Industry expertise spanning SME's to high-growth startups</li>
+                        <li>Proprietary/open-source frameworks backed by extensive research</li>
+                        <li>Dedicated teams committed to your long-term success</li>
+                        <li>Measurable ROI with clear, actionable deliverables</li>
+                        <li>Global presence with local market insights</li>
+                    </ul>
                 </div>
-
-                <div class="comm-card">
-                    <div class="comm-icon">📱</div>
-                    <h3>SMS</h3>
-                    <p>Reach guests instantly with text messages. Perfect for time-sensitive updates and confirmations with
-                        guaranteed delivery.</p>
-                </div>
-
-                <div class="comm-card">
-                    <div class="comm-icon">📧</div>
-                    <h3>Email</h3>
-                    <p>Send beautiful, branded invitations and updates. Track opens, clicks, and responses with detailed
-                        analytics.</p>
+                <div class="stats-box" id="results">
+                    <div class="stat">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Client Satisfaction Rate</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">Millions</div>
+                        <div class="stat-label">in Value Created for Clients</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Countries Served</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Benefits Section -->
-    <section class="benefits">
+    <!-- Why Working With Us Section -->
+    <section class="services">
         <div class="container">
-            <h2 class="section-title">Why Event Planners Love Peppu</h2>
-            <p class="section-subtitle">Join thousands of planners who've streamlined their event management</p>
+            <div class="section-header">
+                <h2>
+                    Working with Us is Simple
+                </h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📩</div>
+                    <h3>Schedule a Consultation</h3>
+                    <p>Develop winning strategies that drive sustainable competitive advantage and accelerate market
+                        leadership.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🗓</div>
+                    <h3>Develop a Custom Plan</h3>
+                    <p>Build high-performing teams and cultures that consistently deliver exceptional business outcomes.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">✔</div>
+                    <h3>Achieve your Desired Success</h3>
+                    <p>Maximize operational efficiency and profitability through data-driven process improvement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <div class="benefits-list">
-                <div class="benefit-item">
-                    <div class="benefit-check">✓</div>
-                    <div>
-                        <h4>Save Hours of Work</h4>
-                        <p>Automate repetitive tasks and focus on creating memorable experiences instead of managing
-                            spreadsheets.</p>
+    <!-- Why Choose Us Section -->
+    <section class="why-us">
+        <div class="container">
+            <div class="why-us-content">
+                <div class="">
+                    <img src="../assets/team.jpg" class="img-fluid w-100" alt="Responsive image" />
+                </div>
+                <div class="why-us-text">
+                    <h2>
+                        What Makes Us Different,
+                        <span class="highlight">Our Offering</span>
+                    </h2>
+                    <p>We follow a collaborative and client-centric approach, working closely with
+                        our clients to understand their specific needs and challenges. Our
+                        methodology involves:</p>
+                    <ul class="benefits">
+                        <li>Thoroughly analyzing the client's business and industry</li>
+                        <li>Developing customized solutions tailored to the client's needs</li>
+                        <li>Executing the plan effectively and efficiently</li>
+                        <li>Tracking progress and making adjustments as needed</li>
+                        <li>Measuring the impact of our solutions and ensuring client
+                            satisfaction</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section with Bootstrap Carousel -->
+    <section class="clients" id="clients">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Clients</h2>
+                <p>Partnering with organizations that shape the future</p>
+            </div>
+
+            <div id="clientsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#clientsCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#clientsCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#clientsCarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#clientsCarousel" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#clientsCarousel" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                </div>
+
+                <!-- Carousel Items -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="client-logo-wrapper">
+                            <img src="../assets/client1.png" class="d-block" alt="Client 1">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="client-logo-wrapper">
+                            <img src="../assets/client2.png" class="d-block" alt="Client 2">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="client-logo-wrapper">
+                            <img src="../assets/client3.png" class="d-block" alt="Client 3">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="client-logo-wrapper">
+                            <img src="../assets/client4.png" class="d-block" alt="Client 4">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="client-logo-wrapper">
+                            <img src="../assets/client5.png" class="d-block" alt="Client 5">
+                        </div>
                     </div>
                 </div>
 
-                <div class="benefit-item">
-                    <div class="benefit-check">✓</div>
-                    <div>
-                        <h4>Zero Confusion</h4>
-                        <p>Keep all guest information in one place. No more lost RSVPs or miscommunication with your team.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="benefit-item">
-                    <div class="benefit-check">✓</div>
-                    <div>
-                        <h4>Professional Results</h4>
-                        <p>Impress clients and guests with polished communication and seamless event execution every time.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="benefit-item">
-                    <div class="benefit-check">✓</div>
-                    <div>
-                        <h4>Mobile-Friendly</h4>
-                        <p>Manage your event on the go. Access all features from any device, anywhere, anytime.</p>
-                    </div>
-                </div>
-
-                <div class="benefit-item">
-                    <div class="benefit-check">✓</div>
-                    <div>
-                        <h4>Instant Updates</h4>
-                        <p>Changes sync in real-time across all channels. Your entire team stays on the same page
-                            automatically.</p>
-                    </div>
-                </div>
-
-                <div class="benefit-item">
-                    <div class="benefit-check">✓</div>
-                    <div>
-                        <h4>Scalable Solution</h4>
-                        <p>From intimate gatherings to large conferences, peppu adapts to events of any size effortlessly.
-                        </p>
-                    </div>
-                </div>
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#clientsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#clientsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section">
+    <section class="cta" id="contact">
         <div class="container">
-            <h2>Ready to Transform Your Event Planning?</h2>
-            <p>Join event planners who trust peppu e-invite for their guest management needs</p>
+            <h2>Ready to Transform Your Business?</h2>
+            <p>Let's discuss how our proven methodologies can drive measurable results for your organization. Schedule a
+                complimentary consultation today.</p>
             <div class="cta-buttons">
-                <a href="/scanner.html" class="btn btn-primary">Get Started Now</a>
-                <a href="#" class="btn btn-secondary">Schedule a Demo</a>
+                <button class="btn btn-primary">Schedule Consultation →</button>
+                <button class="btn btn-outline">✉ Contact Us</button>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer>
         <div class="container">
-            <p>&copy; 2025 Peppu E-Invite. Making event planning beautiful and effortless.</p>
+            <!-- Address Row -->
+            <div class="row footer-row">
+                <div class="col-12">
+                    <h5 class="footer-heading">Our Office</h5>
+                    <p><i class="bi bi-geo-alt-fill me-2"></i>Plot 13A Wada Nas Street, Guzape</p>
+                    <p><i class="bi bi-geo-alt-fill me-2"></i>Federal Capital Territory, Nigeria.</p>
+                    <p><i class="bi bi-envelope-fill me-2"></i>provenperformanceltd@gmail.com</p>
+                </div>
+            </div>
+
+            <!-- Quick Links Row -->
+            <div class="row footer-row">
+                <div class="col-12">
+                    <h5 class="footer-heading">Quick Links</h5>
+                    <div class="row">
+                        <div class="col-md-3 col-6">
+                            <a href="#services">Services</a>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <a href="/about">About Us</a>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <a href="/results">Results</a>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <a href="/contact">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Media Row -->
+            <div class="row footer-row">
+                <div class="col-12">
+                    <h5 class="footer-heading">Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright Row -->
+            <div class="row">
+                <div class="col-12">
+                    <hr class="footer-divider">
+                    <p class="copyright-text">© 2025 Proven Performance Ltd. All rights reserved.</p>
+                    <p class="copyright">Transforming businesses worldwide</p>
+                </div>
+            </div>
         </div>
     </footer>
 </template>
@@ -239,136 +329,164 @@ export default {
 </script>
 
 <style scoped>
-* {
-    margin: 0;
+/* Navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    background: var(--background);
-    color: var(--text);
-    line-height: 1.6;
-    overflow-x: hidden;
-}
-
-/* Hero Section */
-.hero {
-    background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
-    color: white;
-    padding: 120px 20px 100px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    min-height: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.hero::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('../assets/peppu-hero.jpg') center/cover no-repeat;
-    opacity: 0.15;
-    z-index: 0;
-}
-
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    opacity: 0.3;
-}
-
-.hero-content {
+.navbar .container-fluid {
     max-width: 1200px;
     margin: 0 auto;
-    position: relative;
-    z-index: 1;
+    padding: 0 24px;
+    height: 80px;
 }
 
-.logo {
-    font-size: 3.5em;
-    font-weight: 800;
-    margin-bottom: 20px;
-    color: white;
-    text-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
-    letter-spacing: -1px;
-}
-
-.tagline {
-    font-size: 1.5em;
-    margin-bottom: 15px;
-    font-weight: 300;
-    opacity: 0.95;
-}
-
-.subtitle {
-    font-size: 1.1em;
-    margin-bottom: 40px;
-    opacity: 0.9;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.cta-buttons {
+.navbar-brand {
     display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
+}
+
+.navbar-brand img {
+    height: 60px;
+    /* Adjust this value based on your logo size */
+    width: auto;
+    object-fit: contain;
+}
+
+.navbar-nav {
+    gap: 32px;
+    align-items: center;
+}
+
+.navbar-nav .nav-link {
+    color: var(--gray-dark) !important;
+    font-weight: 500;
+    transition: color 0.3s;
+    padding: 0.5rem 0;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--gold) !important;
+}
+
+.navbar-nav .btn-primary {
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+}
+
+/* Mobile styles */
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+
+    .navbar-nav .nav-item {
+        text-align: center;
+    }
+
+    .navbar .container-fluid {
+        height: auto;
+    }
 }
 
 .btn {
-    padding: 16px 40px;
+    padding: 12px 32px;
     border: none;
-    border-radius: 50px;
-    font-size: 1.1em;
+    border-radius: 8px;
     font-weight: 600;
+    font-size: 16px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.3s;
     text-decoration: none;
     display: inline-block;
 }
 
 .btn-primary {
-    background: white;
-    color: var(--primary);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    background: var(--gold);
+    color: var(--navy);
 }
 
 .btn-primary:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
-    background: hsl(0, 0%, 98%);
+    background: var(--gold-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
 }
 
-.btn-secondary {
-    background: rgba(255, 255, 255, 0.15);
-    color: white;
-    border: 2px solid white;
-    backdrop-filter: blur(10px);
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--white);
+    color: var(--white);
 }
 
-.btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.25);
-    transform: translateY(-3px);
+.btn-outline:hover {
+    background: var(--white);
+    color: var(--navy);
 }
 
-/* Features Section */
-.features {
-    padding: 80px 20px;
-    background: white;
+.mobile-menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--navy);
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+    position: relative;
+    overflow: hidden;
+    padding-top: 80px;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    color: var(--white);
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.hero h1 {
+    font-size: 72px;
+    line-height: 1.1;
+    margin-bottom: 24px;
+}
+
+.hero .highlight {
+    color: var(--gold);
+    display: block;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+    max-width: 700px;
+    opacity: 0.9;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+/* Services Section */
+.services {
+    padding: 100px 24px;
+    background: var(--gray-light);
 }
 
 .container {
@@ -376,569 +494,481 @@ body {
     margin: 0 auto;
 }
 
-.section-title {
+.section-header {
     text-align: center;
-    font-size: 2.8em;
-    margin-bottom: 20px;
-    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    font-weight: 700;
+    margin-bottom: 64px;
 }
 
-.section-subtitle {
+.section-header h2 {
+    font-size: 48px;
+    margin-bottom: 16px;
+    color: var(--navy);
+}
+
+.section-header p {
+    font-size: 20px;
+    color: var(--gray);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 32px;
+}
+
+.service-card {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon {
+    width: 64px;
+    height: 64px;
+    background: rgba(212, 175, 55, 0.1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    font-size: 32px;
+}
+
+.service-card h3 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    color: var(--navy);
+}
+
+.service-card p {
+    color: var(--gray);
+    line-height: 1.7;
+}
+
+/* Why Choose Us Section */
+.why-us {
+    padding: 100px 24px;
+}
+
+.why-us-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.why-us h2 {
+    font-size: 48px;
+    margin-bottom: 24px;
+    color: var(--navy);
+}
+
+.why-us .highlight {
+    color: var(--gold);
+    display: block;
+}
+
+.why-us-text p {
+    font-size: 18px;
+    color: var(--gray);
+    margin-bottom: 32px;
+}
+
+.benefits {
+    list-style: none;
+}
+
+.benefits li {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+    color: var(--gray-dark);
+}
+
+.benefits li::before {
+    content: "✓";
+    color: var(--gold);
+    font-weight: bold;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.stats-box {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+    padding: 64px;
+    border-radius: 16px;
+    color: var(--white);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.hero-img {
+    background-image: linear-gradient(to right, rgba(26, 35, 50, 0.95), rgba(26, 35, 50, 0.7)), url('../assets/hero.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.stat {
+    margin-bottom: 40px;
+}
+
+.stat:last-child {
+    margin-bottom: 0;
+}
+
+.stat-number {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.stat-label {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* CTA Section */
+.cta {
+    padding: 100px 24px;
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
     text-align: center;
-    font-size: 1.2em;
-    color: var(--text-light);
-    margin-bottom: 60px;
-    max-width: 700px;
+    color: var(--white);
+}
+
+.cta h2 {
+    font-size: 48px;
+    margin-bottom: 24px;
+}
+
+.cta p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    opacity: 0.9;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    margin-bottom: 60px;
-}
-
-.feature-card {
-    background: white;
-    border-radius: 24px;
-    padding: 40px 30px;
-    text-align: center;
-    transition: all 0.4s ease;
-    border: 2px solid hsl(0, 0%, 92%);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
-}
-
-.feature-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
-    border-color: var(--primary);
-}
-
-.feature-icon {
-    width: 90px;
-    height: 90px;
-    margin: 0 auto 25px;
-    background: linear-gradient(135deg, var(--primary) 0%, var(--gradient-end) 100%);
-    border-radius: 24px;
+.cta-buttons {
     display: flex;
-    align-items: center;
+    gap: 16px;
     justify-content: center;
-    font-size: 2.8em;
-    box-shadow: 0 10px 30px rgba(0, 180, 180, 0.25);
-}
-
-.feature-card h3 {
-    font-size: 1.4em;
-    margin-bottom: 15px;
-    color: var(--text);
-}
-
-.feature-card p {
-    color: var(--text-light);
-    font-size: 1.05em;
-    line-height: 1.7;
-}
-
-/* Stats Section */
-.stats-section {
-    padding: 80px 20px;
-    background: linear-gradient(135deg, var(--primary) 0%, var(--gradient-end) 100%);
-    position: relative;
-    overflow: hidden;
-}
-
-.stats-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
-    opacity: 0.4;
-}
-
-.stats-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 40px;
-    max-width: 1000px;
-    margin: 0 auto;
-    position: relative;
-    z-index: 1;
-}
-
-.stat-card {
-    background: white;
-    border-radius: 20px;
-    padding: 40px 30px;
-    text-align: center;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
-    transform: translateY(0);
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    animation: float-card 3s ease-in-out infinite;
-    position: relative;
-    overflow: hidden;
-}
-
-.stat-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 120px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px 20px 0 0;
-}
-
-.stat-card:nth-child(1)::before {
-    background-image: url('../assets/messages.png');
-}
-
-.stat-card:nth-child(2)::before {
-    background-image: url('/peppu-feature1.jpg');
-}
-
-.stat-card:nth-child(3)::before {
-    background-image: url('../assets/peppu-feature2.jpg');
-}
-
-.stat-card:nth-child(1) {
-    animation-delay: 0s;
-}
-
-.stat-card:nth-child(2) {
-    animation-delay: 0.3s;
-}
-
-.stat-card:nth-child(3) {
-    animation-delay: 0.6s;
-}
-
-.stat-card:hover {
-    transform: translateY(-15px) scale(1.05);
-    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.25);
-}
-
-.stat-number {
-    font-size: 3.5em;
-    font-weight: 800;
-    background: linear-gradient(135deg, var(--primary) 0%, var(--gradient-end) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin-bottom: 10px;
-    line-height: 1;
-    position: relative;
-    z-index: 1;
-}
-
-.stat-label {
-    font-size: 1.2em;
-    color: var(--text-light);
-    font-weight: 500;
-    position: relative;
-    z-index: 1;
-}
-
-@keyframes float-card {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-20px);
-    }
-}
-
-/* Showcase Section */
-.showcase-section {
-    padding: 100px 20px;
-    background: white;
-    position: relative;
-    overflow: hidden;
-}
-
-.showcase-image {
-    max-width: 1000px;
-    width: 100%;
-    margin: 0 auto;
-    border-radius: 30px;
-    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.2);
-    display: block;
-    position: relative;
-    z-index: 1;
-    transform: perspective(1000px) rotateX(2deg);
-    transition: all 0.5s ease;
-}
-
-.showcase-image:hover {
-    transform: perspective(1000px) rotateX(0deg) scale(1.02);
-    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.25);
-}
-
-.showcase-section::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, var(--primary) 0%, transparent 70%);
-    opacity: 0.08;
-    z-index: 0;
-}
-
-/* Communication Section */
-.communication {
-    padding: 80px 20px;
-    background: hsl(180, 65%, 98%);
-}
-
-.comm-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    margin-top: 50px;
-}
-
-.comm-card {
-    background: white;
-    border-radius: 24px;
-    padding: 40px 35px;
-    text-align: center;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    border: 2px solid hsl(0, 0%, 92%);
-    overflow: hidden;
-    position: relative;
-}
-
-.comm-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, var(--primary) 0%, var(--gradient-end) 100%);
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-}
-
-.comm-card:hover::before {
-    transform: scaleX(1);
-}
-
-.comm-card:hover {
-    transform: translateY(-12px);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
-    border-color: var(--primary);
-}
-
-.comm-icon {
-    font-size: 3.5em;
-    margin-bottom: 20px;
-}
-
-.comm-card h3 {
-    font-size: 1.5em;
-    margin-bottom: 12px;
-}
-
-.comm-card p {
-    color: var(--text-light);
-    font-size: 1.05em;
-}
-
-/* Benefits Section */
-.benefits {
-    padding: 80px 20px;
-    background: white;
-}
-
-.benefits-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
-    margin-top: 50px;
-}
-
-.benefit-item {
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
-    padding: 25px;
-    background: hsl(240, 20%, 99%);
-    border-radius: 15px;
-    border-left: 4px solid var(--primary);
-    transition: all 0.3s ease;
-}
-
-.benefit-item:hover {
-    background: hsl(280, 70%, 98%);
-    transform: translateX(5px);
-}
-
-.benefit-check {
-    font-size: 1.8em;
-    color: var(--primary);
-    flex-shrink: 0;
-}
-
-.benefit-item h4 {
-    font-size: 1.2em;
-    margin-bottom: 8px;
-}
-
-.benefit-item p {
-    color: var(--text-light);
-    font-size: 1.05em;
-}
-
-/* CTA Section */
-.cta-section {
-    padding: 100px 20px;
-    background: linear-gradient(135deg, var(--primary) 0%, var(--gradient-end) 100%);
-    color: white;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.cta-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('/peppu-feature2.jpg') center/cover no-repeat;
-    opacity: 0.1;
-}
-
-.cta-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-.cta-section p {
-    font-size: 1.3em;
-    margin-bottom: 40px;
-    opacity: 0.95;
+    flex-wrap: wrap;
 }
 
 /* Footer */
-.footer {
-    background: hsl(240, 20%, 15%);
-    color: white;
-    padding: 40px 20px;
+footer {
+    background: var(--navy);
+    color: var(--white);
+    padding: 60px 24px 30px;
+}
+
+footer .container {
+    max-width: 1200px;
+}
+
+.footer-row {
+    margin-bottom: 40px;
     text-align: center;
 }
 
-.footer p {
-    opacity: 0.8;
+.footer-heading {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--gold);
 }
 
-/* Animations */
-@keyframes float {
-
-    0%,
-    100% {
-        transform: translateY(0px);
-    }
-
-    50% {
-        transform: translateY(-20px);
-    }
+footer p {
+    margin-bottom: 8px;
+    opacity: 0.9;
 }
 
-.feature-icon {
-    animation: float 3s ease-in-out infinite;
+/* Quick Links */
+.footer-row a {
+    color: var(--white);
+    text-decoration: none;
+    opacity: 0.9;
+    transition: all 0.3s;
+    display: inline-block;
+    margin-bottom: 10px;
 }
 
-.feature-card:nth-child(1) .feature-icon {
-    animation-delay: 0s;
+.footer-row a:hover {
+    color: var(--gold);
+    opacity: 1;
 }
 
-.feature-card:nth-child(2) .feature-icon {
-    animation-delay: 0.2s;
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.feature-card:nth-child(3) .feature-icon {
-    animation-delay: 0.4s;
+.social-icons a {
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    transition: all 0.3s;
 }
 
-.feature-card:nth-child(4) .feature-icon {
-    animation-delay: 0.6s;
+.social-icons a:hover {
+    background: var(--gold);
+    color: var(--navy);
+    transform: translateY(-3px);
+}
+
+/* Copyright Section */
+.footer-divider {
+    border-color: rgba(255, 255, 255, 0.2);
+    margin: 30px 0 20px;
+}
+
+.copyright-text {
+    margin-bottom: 8px;
+    font-weight: 500;
+    text-align: center;
+}
+
+footer .copyright {
+    opacity: 0.7;
+    font-size: 14px;
+    margin-bottom: 0;
+    text-align: center;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-    .logo {
-        font-size: 2.2em;
+    .footer-row {
+        margin-bottom: 30px;
     }
 
-    .tagline {
-        font-size: 1.2em;
+    .footer-heading {
+        font-size: 18px;
     }
 
-    .subtitle {
-        font-size: 1em;
+    .social-icons a {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-row {
+        margin-bottom: 30px;
     }
 
-    .section-title {
-        font-size: 2em;
+    .footer-heading {
+        font-size: 18px;
     }
 
+    .social-icons a {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+}
+
+/* Clients Section */
+.clients {
+    padding: 100px 24px;
+    background: var(--gray-light);
+}
+
+.clients .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.clients .section-header {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.clients .section-header h2 {
+    font-size: 48px;
+    margin-bottom: 16px;
+    color: var(--navy);
+}
+
+.clients .section-header p {
+    font-size: 20px;
+    color: var(--gray);
+}
+
+/* Carousel Styling */
+#clientsCarousel {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.client-logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 40px;
+    min-height: 300px;
+}
+
+.client-logo-wrapper img {
+    max-width: 100%;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.carousel-item.active .client-logo-wrapper img {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+/* Carousel Controls */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background-color: var(--navy);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.8;
+}
+
+.carousel-control-prev {
+    left: -80px;
+}
+
+.carousel-control-next {
+    right: -80px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+    background-color: var(--gold);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Carousel Indicators */
+.carousel-indicators {
+    margin-bottom: -40px;
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--gray);
+    opacity: 0.5;
+    border: none;
+}
+
+.carousel-indicators button.active {
+    background-color: var(--gold);
+    opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .clients .section-header h2 {
+        font-size: 36px;
+    }
+
+    .client-logo-wrapper {
+        padding: 40px 20px;
+        min-height: 250px;
+    }
+
+    .client-logo-wrapper img {
+        max-height: 150px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 40px;
+        height: 40px;
+    }
+
+    .carousel-control-prev {
+        left: 10px;
+    }
+
+    .carousel-control-next {
+        right: 10px;
+    }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .section-header h2 {
+        font-size: 36px;
+    }
+
+    .why-us-content {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-buttons,
     .cta-buttons {
         flex-direction: column;
-        align-items: center;
     }
 
     .btn {
         width: 100%;
-        max-width: 300px;
-    }
-
-    .navbar {
-        padding: 0 20px;
-    }
-
-    .navbar-menu {
-        display: none;
-    }
-
-    .mobile-menu-btn {
-        display: block;
-    }
-}
-
-/* Navbar */
-.navbar {
-    background: white;
-    border-bottom: 1px solid #e2e8f0;
-    padding: 0 40px;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-.navbar-brand {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 24px;
-    font-weight: bold;
-    color: #1a202c;
-}
-
-.brand-icon {
-    width: 40px;
-    height: 40px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 24px;
-}
-
-.navbar-menu {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-
-.nav-link {
-    color: #4a5568;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 500;
-    transition: color 0.2s;
-}
-
-.nav-link:hover {
-    color: #667eea;
-}
-
-.nav-link.active {
-    color: #667eea;
-}
-
-.navbar-actions {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.user-avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
-    cursor: pointer;
-    border: 2px solid #e2e8f0;
-    transition: border-color 0.2s;
-}
-
-.user-avatar:hover {
-    border-color: #667eea;
-}
-
-.mobile-menu-btn {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    color: #4a5568;
-}
-
-.mobile-nav {
-    display: none;
-    position: fixed;
-    top: 70px;
-    left: 0;
-    right: 0;
-    background: white;
-    border-bottom: 1px solid #e2e8f0;
-    padding: 20px;
-    z-index: 99;
-}
-
-.mobile-nav.active {
-    display: block;
-}
-
-.mobile-nav-link {
-    display: block;
-    padding: 12px 0;
-    color: #4a5568;
-    text-decoration: none;
-    font-size: 16px;
-    border-bottom: 1px solid #f7fafc;
-}
-
-@media (max-width: 480px) {
-    .navbar-brand span {
-        display: none;
+        text-align: center;
     }
 }
 </style>
