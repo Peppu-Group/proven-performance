@@ -138,39 +138,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Performance Optimization -->
-            <div class="service-detail">
-                <div class="service-content">
-                    <h2>General Office Supplies and Equipment</h2>
-                    <p>We supply high-quality general office supplies and equipment.</p>
-
-                    <ul class="service-features">
-                        <li>Computers</li>
-                        <li>Printers</li>
-                        <li>Stationeries & office supplies</li>
-                        <li>Furniture, and other essential items</li>
-                    </ul>
-
-                    <a href="/contact" class="btn btn-primary">Learn More →</a>
-                </div>
-
-                <div class="service-image">
-                    <h3>Impact Delivered</h3>
-                    <div class="service-stat">
-                        <div class="service-stat-number">32%</div>
-                        <div class="service-stat-label">Average Cost Savings</div>
-                    </div>
-                    <div class="service-stat">
-                        <div class="service-stat-number">3.5x</div>
-                        <div class="service-stat-label">Faster</div>
-                    </div>
-                    <div class="service-stat">
-                        <div class="service-stat-number">100%</div>
-                        <div class="service-stat-label">Success Rate</div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
     <!--Footer-->

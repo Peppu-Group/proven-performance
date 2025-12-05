@@ -65,7 +65,7 @@
                         stand the test of time.</p>
                     <ul class="benefits">
                         <li>Proven track record across successful engagements</li>
-                        <li>Industry expertise spanning SME's to high-growth startups</li>
+                        <li>Global (exposure) presence with local market insights</li>
                         <li>Proprietary/open-source frameworks backed by extensive research</li>
                         <li>Dedicated teams committed to your long-term success</li>
                         <li>Measurable ROI with clear, actionable deliverables</li>
@@ -73,18 +73,7 @@
                     </ul>
                 </div>
                 <div class="stats-box" id="results">
-                    <div class="stat">
-                        <div class="stat-number">98%</div>
-                        <div class="stat-label">Client Satisfaction Rate</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">Millions</div>
-                        <div class="stat-label">in Value Created for Clients</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">5+</div>
-                        <div class="stat-label">Countries Served</div>
-                    </div>
+                    <img src="../assets/why-us.jpg" class="img-fluid w-100" alt="Responsive image" />
                 </div>
             </div>
         </div>
@@ -99,21 +88,11 @@
                 </h2>
             </div>
             <div class="services-grid">
-                <div class="service-card">
+                <div class="service-card clickme" @click="goContact()">
                     <div class="service-icon">📩</div>
                     <h3>Schedule a Consultation</h3>
                     <p>Develop winning strategies that drive sustainable competitive advantage and accelerate market
                         leadership.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🗓</div>
-                    <h3>Develop a Custom Plan</h3>
-                    <p>Build high-performing teams and cultures that consistently deliver exceptional business outcomes.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">✔</div>
-                    <h3>Achieve your Desired Success</h3>
-                    <p>Maximize operational efficiency and profitability through data-driven process improvement.</p>
                 </div>
             </div>
         </div>
@@ -147,7 +126,7 @@
         </div>
     </section>
 
-    <!-- Clients Section with Bootstrap Carousel -->
+    <!-- Clients Section with Bootstrap Carousel 
     <section class="clients" id="clients">
         <div class="container">
             <div class="section-header">
@@ -156,7 +135,6 @@
             </div>
 
             <div id="clientsCarousel" class="carousel slide" data-bs-ride="carousel">
-                <!-- Indicators -->
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#clientsCarousel" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
@@ -170,7 +148,6 @@
                         aria-label="Slide 5"></button>
                 </div>
 
-                <!-- Carousel Items -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="client-logo-wrapper">
@@ -199,7 +176,6 @@
                     </div>
                 </div>
 
-                <!-- Controls -->
                 <button class="carousel-control-prev" type="button" data-bs-target="#clientsCarousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
@@ -211,6 +187,7 @@
             </div>
         </div>
     </section>
+    -->
     <!-- Footer -->
     <FooterView/>
 </template>
@@ -345,7 +322,9 @@ export default {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 32px;
 }
-
+.clickme {
+    cursor: pointer;
+}
 .service-card {
     background: var(--white);
     padding: 40px;

@@ -8,7 +8,7 @@
                 <h1>
                     <span class="highlight">About Us</span>
                 </h1>
-                <p>About Us - The Company</p>
+                <p>About Us - Proven Performance Ltd</p>
             </div>
         </div>
     </section>

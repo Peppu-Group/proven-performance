@@ -94,6 +94,7 @@
                         <option value="change">Change Management</option>
                         <option value="project">Project Management</option>
                         <option value="digital">Digital Transformation</option>
+                        <option value="training">Training</option>
                         <option value="other">Other</option>
                     </select>
                 </div>
