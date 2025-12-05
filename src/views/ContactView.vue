@@ -24,7 +24,7 @@
                     <div class="contact-icon">📧</div>
                     <div class="contact-item-content">
                         <h3>Email</h3>
-                        <p><a href="mailto:provenperformanceltd@gmail.com">provenperformanceltd@gmail.com</a></p>
+                        <p><a href="mailto:info@provenperformanceltd.com">info@provenperformanceltd.com</a></p>
                     </div>
                 </div>
 
@@ -41,6 +41,14 @@
                     <div class="contact-item-content">
                         <h3>Business Hours</h3>
                         <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday - Sunday: Closed</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <div class="contact-item-content">
+                        <h3>Call</h3>
+                        <p>+234 901 911 1152</p>
                     </div>
                 </div>
             </div>

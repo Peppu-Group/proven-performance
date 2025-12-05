@@ -19,7 +19,7 @@
                 <div class="col-12">
                     <h5 class="footer-heading">Our Office</h5>
                     <p><i class="bi bi-geo-alt-fill me-2"></i>Plot 13A Wada Nas Street, Guzape. Federal Capital Territory, Nigeria</p>
-                    <p><i class="bi bi-envelope-fill me-2"></i>provenperformanceltd@gmail.com</p>
+                    <p><i class="bi bi-envelope-fill me-2"></i>info@provenperformanceltd.com</p>
                 </div>
             </div>
 
