@@ -283,8 +283,6 @@ Both are imported and registered individually in each page view that uses them.
 ---
 
 ## Notes for Developers
-
-- **Global CSS variables** such as `--navy`, `--gold`, `--gray`, and `--white` are defined in a global stylesheet and used throughout all components. Ensure this stylesheet is imported in `main.js` for variables to resolve correctly.
 - **`<style scoped>`** is used on all components, meaning CSS rules only apply to the component they are written in and will not leak into other components.
 - **`fadeInUp` animation** is referenced in hero sections across all pages. Ensure the `@keyframes fadeInUp` rule is defined globally (it is currently defined inside `HomeView.vue` — consider moving it to a global stylesheet so all pages can access it reliably).
 - The **contact form** in `ContactView.vue` currently uses `console.log` and an `alert` for form submission feedback. Before going live, replace this with a real form handling service such as [Netlify Forms](https://docs.netlify.com/forms/setup/), [Formspree](https://formspree.io/), or a custom backend API endpoint.
